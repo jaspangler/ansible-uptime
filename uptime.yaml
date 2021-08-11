@@ -7,3 +7,6 @@
 
     - name: get uptime
       raw: uptime
+      register: out
+
+    - debug: var=out.stdout_lines
