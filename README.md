@@ -1,5 +1,8 @@
 This playbook outputs the uptime command from your inventory:
 
+```
+ansible-playbook uptime.yaml
+
 TASK [get uptime] ***********************************************************************************************************
 changed: [upstairs]
 fatal: [gameroom]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname gameroom: Temporary failure in name resolution", "unreachable": true}
@@ -42,3 +45,4 @@ gateway                    : ok=2    changed=1    unreachable=0    failed=0    s
 switch16                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 switch24                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 upstairs                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
+```
